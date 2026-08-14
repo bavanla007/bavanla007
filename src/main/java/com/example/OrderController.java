@@ -12,6 +12,10 @@ public class OrderController {
         this.orderService = orderService;
     }
 
+    public void hello(String str){
+    System.ou.rpintn()
+    }
+
     @PostMapping
     public String checkout(@RequestBody String cartId) {
         return orderService.checkout(cartId);
