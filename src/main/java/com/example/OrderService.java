@@ -12,7 +12,7 @@ public class OrderService {
     }
 
     public String checkout(String cartId) {
-        return paymentClient.pay("card", 100);
+                return paymentClient.pay("card", 100) + ":" + cartId;
     }
 
     public String refund(String orderId, String reason) {
